@@ -21,6 +21,11 @@
 			<result name="success">/exameFormulario.jsp</result>
 		</action>
 		
+		<action name="ExamePreparaCadastro" class="br.com.crud.actions.ExameAction"
+				method="preparaCadastro">
+			<result name="success">/exameFormulario.jsp</result>
+		</action>
+		
 		<action name="ExameLista" class="br.com.crud.actions.ExameAction"
 				method="lista">
 			<result name="success">/listaExame.jsp</result>

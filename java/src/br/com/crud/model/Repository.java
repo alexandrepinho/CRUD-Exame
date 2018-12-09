@@ -14,4 +14,8 @@ public interface Repository
 		
 	public List<Exame> listaExames();
 	
+	public List<TipoExame> tiposExame();
+		
+	public List<Medico> medicos();
+	
 }

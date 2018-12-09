@@ -11,6 +11,8 @@ public class Exame {
 	private Date dataVencimento;
 	private boolean resultado;
 	private Finalidade finalidade;
+	private String nomePaciente;
+	private String documentoPaciente;
 
 	public Integer getId() {
 		return id;
@@ -66,6 +68,22 @@ public class Exame {
 
 	public void setFinalidade(Finalidade finalidade) {
 		this.finalidade = finalidade;
+	}
+
+	public String getNomePaciente() {
+		return nomePaciente;
+	}
+
+	public void setNomePaciente(String nomePaciente) {
+		this.nomePaciente = nomePaciente;
+	}
+
+	public String getDocumentoPaciente() {
+		return documentoPaciente;
+	}
+
+	public void setDocumentoPaciente(String documentoPaciente) {
+		this.documentoPaciente = documentoPaciente;
 	}
 
 	@Override

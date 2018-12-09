@@ -1,5 +1,54 @@
-/build/
-/target/
-.classpath
-.settings
+# NetBeans specific #
+target/
+nb-configuration.xml
+*.DS_Store
+*.sql~
+*.bak
+*.db
+*.bat
+.DS_Store
+.DS_Store~
+*.sql~
+nbactions.xml
+faces-config.NavData
+######################
+# Eclipse
+######################
+ 
+*.pydevproject
+*.jasper
 .project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+pom.xml.orig
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+*.prefs
+*.orig
+/src/main/resources/rebel.xml
+# External tool builders
+.externalToolBuilders/
+ 
+# Locally stored "Eclipse launch configurations"
+*.launch
+ 
+# CDT-specific
+.cproject
+ 
+# PDT-specific
+.buildpath
+
+
+.tern-project
+
+bin/
+
+java/target/

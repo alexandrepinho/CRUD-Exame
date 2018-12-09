@@ -54,7 +54,19 @@ CREATE TABLE IF NOT EXISTS `exame_ocupacional`.`exame` (
   `dt_vencimento` DATETIME NOT NULL,
   `resultado` TINYINT(1) NOT NULL,
   `finalidade` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`))
+  `nome_paciente` VARCHAR(45) NOT NULL,
+  `documento_paciente` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `fk_exame_tipo_exame`
+    FOREIGN KEY (`tipo_exame`)
+    REFERENCES `exame_ocupacional`.`tipo_exame` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_exame_medico1`
+    FOREIGN KEY (`medico`)
+    REFERENCES `exame_ocupacional`.`medico` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 CREATE INDEX `fk_exame_tipo_exame_idx` ON `exame_ocupacional`.`exame` (`tipo_exame` ASC);
