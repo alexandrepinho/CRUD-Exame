@@ -1,9 +1,0 @@
-br\com\crud\model\Finalidade.class
-br\com\crud\model\TipoExame.class
-br\com\crud\factory\ExameRepositoryFactory.class
-br\com\crud\model\Exame.class
-br\com\crud\model\Medico.class
-br\com\crud\actions\ExameAction.class
-br\com\crud\model\Repository.class
-br\com\crud\factory\RepositoryFactory.class
-br\com\crud\model\ExameRepository.class
